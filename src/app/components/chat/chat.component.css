@@ -1,0 +1,10 @@
+#chat-mensajes{
+    height: 60vh;
+    border: 1px solid gray;
+    border-radius: 5px;
+    overflow-y: scroll;
+}
+
+.chat-input{
+    margin-top: 10px;
+}

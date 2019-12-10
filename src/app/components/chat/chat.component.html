@@ -1,0 +1,22 @@
+<p>chat works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <button type="button" (click)="auth.logout" name="" id="" class="btn btn-primary btn-lg btn-block">Log OUT</button>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-12">
+            <div id="chat-mensajes">
+                <ul>
+                    <li *ngFor="let mensaje of mensajes">{{mensaje.mensaje}}</li>
+                </ul>
+            </div>
+
+            <div>
+                <input type="text" #mensaje (keydown.enter)="sendmessage(mensaje.value)" class="form-control chat-input" placeholder="Mensaje..." >
+            </div>
+        </div>
+    </div>
+</div>
